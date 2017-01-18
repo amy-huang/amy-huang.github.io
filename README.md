@@ -1,2 +1,2 @@
 # amy-huang.github.io
-for github pages
+My first personal website, hosted by github pages.

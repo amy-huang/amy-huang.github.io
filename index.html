@@ -143,7 +143,7 @@ var color = d3.scaleLinear()
   .clamp(true)
   .range(['#fff', '#409A99']);
 
-var projection = d3.geo.mercator()
+var projection = d3.geoMercator()
   .scale(1500)
   // Center the Map in Colombia
   .center([-74, 4.5])

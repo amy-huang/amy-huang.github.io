@@ -15,16 +15,14 @@ svg {
 
 </style>
 	  
-<svg width="1000" height="650"></svg>
-	  
-<!--
+	  <svg width="1000" height="650" id="svg1"></svg>
 <form>
   <label><input type="radio" name="mode" value="sumBySize" checked> Show research divisions by funding proportion </label>
   <label><input type="radio" name="mode" value="sumByCount"> Show all research divisions equally </label>
 </form>
 
 <script>
-var svg = d3.select("svg"),
+var svg1 = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
 
@@ -48,7 +46,7 @@ d3.json("flare.json", function(error, data) {
 
   treemap(root);
 
-  var cell = svg.selectAll("g")
+  var cell = .selectAll("g")
     .data(root.leaves())
     .enter().append("g")
       .attr("transform", function(d) { return "translate(" + d.x0 + "," + d.y0 + ")"; });

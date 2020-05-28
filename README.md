@@ -1,2 +1,1 @@
-# amy-huang.github.io
-Personal website, hosted by github pages.
+Personal website
